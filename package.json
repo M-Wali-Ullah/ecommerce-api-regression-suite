@@ -1,0 +1,17 @@
+{
+  "name": "ecommerce-regression-suite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run postman/ecommerce_collection.json -e postman/staging_environment.json -r htmlextra --reporter-htmlextra-export reports/ecommerce-report.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "newman": "^6.2.1",
+    "newman-reporter-htmlextra": "^1.23.1"
+  }
+}
+
